@@ -55,12 +55,12 @@ Provide clear, step-by-step instructions that allow someone with no prior knowle
 1.  Clone the repository:
 
     ```
-    git clone https://github.com/FaridaAdamuMagaji/startup-website.git 
+    git clone https://github.com/FaridaAdamuMagaji/Startup-Page.git  
     ```
 2.  Navigate to the project directory:
 
     ```
-    cd startup-website
+    cd Startup-Page
     ```
 3.  Install dependencies:
 
@@ -76,10 +76,6 @@ Provide clear, step-by-step instructions that allow someone with no prior knowle
     npm start
     ```
 2.  Open your browser and navigate to `http://localhost:3000`.
-
-
-check below-----------------
-Include the basic commands with examples to demonstrate typical use cases [1]. Link to more detailed documentation or tutorials on a support portal [1].
 
 
 ## Contributing
