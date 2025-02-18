@@ -27,49 +27,46 @@
   font-size: 30px;
   cursor: pointer;
   padding-right: 70px;
-  display: block;
-  
 }
-/*.menu-icon::before,
-.menu-icon::after {
-  content: "";
-  display: block;
-  width: 28px;
-  height: 2px;
-  position: absolute;
-  background-color: #FFFFFF;
-
-}
-.menu-icon::before{
-  top: -6px;
-}
-.menu-icon::after{
-  top: 6px;
-}*/
-.menu-container{
-  margin-top: 12px;
-  
-}
-.list{
+.menu-container {
   display: flex;
-  gap: 30px;
-  list-style: none;
-  margin-top: 5px;
-}
-.lists{
-  display: none;
-  font-size: 20px;
-  font-weight: 400;
-  font-family: "Work Sans", serif;
-  text-decoration: none;
-  color: white;
-}
-/*.menu{
-  padding-right: 40px;
-  margin-top: -50px;
   justify-content: flex-end;
-  justify-self: flex-end;
-}*/
+  margin-right: 70px;
+  align-items: center;
+}
+
+.menu-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+}
+
+.menu {
+  width: 30px; 
+  height: auto;
+}
+.list {
+  display: flex;
+  flex-direction: column; 
+  background-color: #74C69D; 
+  padding: 1rem;
+  position: absolute;
+  top: 50px; 
+  right: 0;
+  border: 1px;
+  z-index: 10; 
+}
+.lists {
+  display: block;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  color: #FFFFFF;
+  font-family: "Work Sans", serif;
+}
+.desktop-only {
+  display: none;
+}
 .star{
   color: white;
   font-size: 30px;
@@ -329,19 +326,24 @@
   .title{
     padding: 15px 50px 50px 30px;
   }
-  /*.menu-list{
-    display: inline;
-    padding-right: 40px;
-    
-  }*/
-  .menu-button{
-    display: none;
-    
+  .menu-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
   }
-  .lists{
+  .mobile-only {
+    display: none;
+  }
+  .desktop-only {
+    display: flex; 
+  }
+
+  .desktop-only .lists {
     display: block;
-    padding-top: 10px;
-    
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 20px;
   }
   .start{
     margin-top: -20px;
@@ -492,13 +494,10 @@
     grid-template-columns: 1fr 1fr;
     justify-self: center;
     grid-column-gap: 40px;
-    
   }
   #ports{
     width: 560px;
     height: 330px;
-    
-    
   }
 
 }

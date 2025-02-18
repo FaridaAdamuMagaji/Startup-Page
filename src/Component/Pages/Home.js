@@ -6,6 +6,7 @@ import Team from '../Team';
 import Footer from '../Footer';
 
 
+
 const Home = () => {
     return (
         <div>
