@@ -502,4 +502,86 @@
 
 }
 
+/*styling for services*/
+.ours{
+  font-family: "Crimson Text", serif;
+  font-size: 24px;
+  font-weight: 700;
+  text-align: center;
+}
+.shadow{
+  border: 2px solid #ddd;
+  box-shadow: 0 0 10px rgba(29, 24, 24, 0.4);
+  width: 339px;
+  height: 560px;
+  justify-self: center;
+  border-radius: 7px;
+  margin-bottom: 35px;
+  margin-top: 45px;
+}
+.basic{
+  text-align: center;
+  font-weight: 400;
+  font-size: 15px;
+  font-family: "Work Sans", serif;
+  padding-top: 30px;
+}
+.cost{
+  text-align: center;
+  display: flex;
+  gap: 9px;
+  justify-self: center;
+  margin-top: -20px;
+}
+.mile{
+  font-family: "Work Sans", serif;
+  font-weight: 700;
+  font-size: 40px;
+  margin-top: 10px;
+}
+.month{
+  font-size: 15px;
+  font-weight: 400;
+  font-family: "Work Sans", serif;
+  color: rgba(33, 37, 41, 0.5);
+  margin-top: 24px;
+}
+.tick{
+  margin-top: 45px;
+  margin-bottom: 45px;
+}
+.ticks{
+  display: flex;
+  gap: 15px;
+  margin-left: 24px;
+  margin-bottom: -10px;
+  
+}
+.amet{
+  font-size: 15px;
+  font-weight: 400;
+  text-align: center;
+  justify-self: center;
+  font-family: "Work Sans", serif;
+  width: 279px;
+  color: rgba(33, 37, 41, 0.5);
+  margin-top: -25px;
+}
+.sits{
+  color: rgba(33, 37, 41, 1);
+  font-size: 15px;
+  font-family: "Work Sans", serif;
+  font-weight: 400;
+}
+
+/*Desktop view for services*/
+@media screen and (min-width: 1024px) {
+  .key{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+  }
+}
+
+
 
