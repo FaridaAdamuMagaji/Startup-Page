@@ -19,12 +19,14 @@ const Menu = () => {
                     <Link className='lists' to="/" onClick={() => setShowMenu(false)}>Home</Link>
                     <Link className='lists' to="/Portfolio" onClick={() => setShowMenu(false)}>Portfolio</Link>
                     <Link className='lists' to="/Services" onClick={() => setShowMenu(false)}>Services</Link>
+                    <Link className='lists' to="/Contact" onClick={() => setShowMenu(false)}>Contact</Link>
                 </nav>
             )}
             <nav className="desktop-only">
                 <Link className='lists' to="/">Home</Link>
                 <Link className='lists' to="/Portfolio">Portfolio</Link>
                 <Link className='lists' to="/Services">Services</Link>
+                <Link className='lists' to="/Contact">Contact</Link>
             </nav>
         </div>
     );

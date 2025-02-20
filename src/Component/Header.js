@@ -1,7 +1,6 @@
 import community from "../assets/community.png"
 import Navbar from "./Navbar";
 
-
 const Header = () => {
     return (
         <nav className="title">

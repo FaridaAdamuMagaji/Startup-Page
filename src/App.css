@@ -2,19 +2,24 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
+
 .title{
   background-color: #74C69D;
+  overflow-x: hidden;
+ 
+  
 }
 .head{
   display: flex;
   justify-content: space-between;
-  margin-bottom: -50px;
+  
+  /*margin-bottom: -50px;*/
 }
 .start{
   display: flex;
   gap: 20px;
   justify-self: start;
-  margin-left: 70px;
+  margin-left: 10px;
 }
 #slide{
   width: 40px;
@@ -26,12 +31,10 @@
   padding: 15px;
   font-size: 30px;
   cursor: pointer;
-  padding-right: 70px;
 }
 .menu-container {
   display: flex;
   justify-content: flex-end;
-  margin-right: 70px;
   align-items: center;
 }
 
@@ -43,7 +46,7 @@
 }
 
 .menu {
-  width: 30px; 
+  /*width: 30px;*/ 
   height: auto;
 }
 .list {
@@ -73,6 +76,10 @@
   font-weight: 500;
   font-family: "Work Sans", serif;
 }
+.bulb{
+  height: auto;
+  text-align: center;
+}
 .people{
   align-self: center;
   justify-self: center;
@@ -80,31 +87,33 @@
 }
 .paragraph{
   text-align: left;
-  margin-left: 50px;
+ /* margin-left: 50px;*/
 }
 .first{
   color: #FFFFFF;
   font-family: "Work Sans", serif;
   font-size: 16px;
   font-weight: 700;
-  margin-left: 20px;
+  /*margin-left: 20px;*/
 }
 .lorem{
   font-family: "Crimson Text", serif;
   color: #FFFFFF;
   font-size: 28px;
   font-weight: 700;
-  margin-left: 20px;
+  /*margin-left: 20px;*/
 }
 .ipsum{
   color: #FFFFFF;
   font-family: "Work Sans", serif;
   font-size: 15px;
   font-weight: 400;
-  width: 320px;
-  margin-left: 20px;
+  /*width: 320px;*/
+  max-width: 100%;
+  /*margin-left: 20px;*/
   opacity: 0.75;
   line-height: 20px;
+  overflow-wrap: break-word;
 }
 .text{
   color: black;
@@ -119,7 +128,7 @@
   border: none;
   border-radius: 6px;
   background-color: #FFFFFF;
-  margin-left: 20px;
+  /*margin-left: 20px;*/
   margin-bottom: 40px;
 }
 .partners{
@@ -358,7 +367,6 @@
     font-size: 40px;
   }
   .bulb{
-    width: 400px;
     height: 360px;
     padding-right: 35px;
     margin-top: -30px;
@@ -584,4 +592,62 @@
 }
 
 
+/*styles for contact page*/
+.count{
+  font-family: "Crimson Text", serif;
+  font-size: 24px;
+  font-weight: 700;
+  text-align: center;
+  margin-top: 25px;
+  padding-top: 40px;
+
+}
+
+#form{
+  background-color: rgba(238, 238, 238, 1);
+  border: 1px solid rgba(0, 0, 0, 1);
+  border-radius: 5px;
+  margin-bottom: 20px;
+  width: 335px;
+  height: 38px;
+
+}
+#forms{
+  background-color: rgba(238, 238, 238, 1);
+  border: 1px solid rgba(0, 0, 0, 1);
+  border-radius: 5px;
+  width: 335px;
+  height: 141px;
+
+}
+.labels{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-self: center;
+  
+}
+label{
+  font-family: "Work Sans", serif;
+  font-weight: 400;
+  font-size: 20px;
+}
+.submit{
+  width: 335px;
+  height: 48px;
+  border-radius: 5px;
+  background-color: rgba(33, 37, 41, 1);
+}
+#sub{
+  color: #FFFFFF;
+  font-family: "Work Sans", serif;
+  font-size: 20px;
+  font-weight: 400;
+  text-decoration: none;
+}
+.lasts{
+  justify-self: center;
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
 
