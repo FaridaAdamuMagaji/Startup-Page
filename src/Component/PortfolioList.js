@@ -40,9 +40,7 @@ const PortfolioList = (props) => {
             <div className="portfolio">
                 {works.map((work) => (
                     <div key={work.id}>
-                        <div className="port">
-                            <img src={work.images} alt="works" id="ports" />
-                        </div>
+                        <img src={work.images} alt="works" id="ports" />
                     </div>
                 ))}
             </div>

@@ -5,7 +5,7 @@ const Network = () => {
     return (
         <div className="tweet">
             <div className="tele">
-                <div className="group">
+                <div>
                     <img className="group" src={society} alt="group"/>
                 </div>
                 <div className="sit">
@@ -23,7 +23,7 @@ const Network = () => {
                 </div>
             </div>
             <div className="teles">
-            <div className="group">
+            <div>
                 <img className="group" src={networking} alt="network"/>
             </div>
             <div className="sit">

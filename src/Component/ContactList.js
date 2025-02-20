@@ -1,6 +1,6 @@
 import Navbar from "./Navbar";
 import Footer from "./Footer";
-import KanoMap from "./Maps";
+import GoogleMapKano from "./Maps";
 
 /*const ContactList = () => {
     
@@ -64,19 +64,18 @@ function ContactList() {
                     Lorem ipsum, dolor sit amet consectetur <span className="elicits">adipisicing elit.</span>
                 </p>
             </div>
-            <KanoMap />
-            <img src="https://www.google.com/search?q=kano+kumbotso+map&sca_esv=8a5f3c529fc99551&ei=zT-3Z9zfJcyThbIPxsyOqAI&ved=0ahUKEwic-rzKvtKLAxXMSUEAHUamAyUQ4dUDCBA&uact=5&oq=kano+kumbotso+map&gs_lp=Egxnd3Mtd2l6LXNlcnAiEWthbm8ga3VtYm90c28gbWFwMgQQABhHMgQQABhHMgQQABhHMgQQABhHMgQQABhHMgQQABhHMgQQABhHMgQQABhHSP08UKALWKALcAF4A5ABAJgBAKABAKoBALgBA8gBAPgBAZgCA6ACLMICChAAGLADGNYEGEeYAwDiAwUSATEgQIgGAZAGCJIHATOgBwA&sclient=gws-wiz-serp" alt=" "></img>
+            <GoogleMapKano />
         <form onSubmit={handleSubmit}>
             <div className="labels">
-            <label>
-            Name
-        </label>
-            <input id='form'
-                type="text" 
-                name="names" 
-                value={formData.names} 
-                onChange={handleChange} 
-            />
+                <label>
+                    Name
+                </label>
+                <input id='form'
+                    type="text" 
+                    name="names" 
+                    value={formData.names} 
+                    onChange={handleChange} 
+                />
             </div>
             <div className="labels">
             <label>

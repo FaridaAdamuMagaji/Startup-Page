@@ -77,7 +77,7 @@
   font-family: "Work Sans", serif;
 }
 .bulb{
-  height: auto;
+  /*height: auto;*/
   text-align: center;
 }
 .people{
@@ -157,7 +157,7 @@
   font-size: 20px;
   font-weight: 400;
   font-family: "Work Sans", serif;
-  margin-left: 20px;
+  text-align: center;
   width: 280px;
   text-align: center;
   justify-self: center;
@@ -214,22 +214,23 @@
 .group{
   text-align: center;
   margin-top: 33px;
+  width: 100%;
 }
 .net{
-  margin-left: 75px;
   font-weight: 700;
   font-family: "Crimson Text", serif;
   font-size: 24px;
+  text-align: left;
 }
 .nets{
   padding: 10px;
-  width: 330px;
-  margin-left: 65px;
+  width: 290px;
   font-family: "Work Sans", serif;
   font-weight: 400;
   font-size: 15px;
   color: #21252977;
   margin-top: -12px;
+  text-align: left;
 }
 .more{
   background-color: #212529;
@@ -333,7 +334,7 @@
 /*Desktop View*/
 @media screen and (min-width: 1024px) {
   .title{
-    padding: 15px 50px 50px 30px;
+    /*padding: 15px 50px 50px 30px;   check  */
   }
   .menu-container {
     display: flex;
@@ -360,7 +361,8 @@
   .starts{
     display: flex;
     flex-direction: row-reverse;
-    gap: 620px;
+    /*gap: 620px;*/
+    grid-template: 30px;
     margin-top: 30px;
   }
   .star{
@@ -406,7 +408,7 @@
   }
   .flex{
     display: flex;
-    gap: 70px;
+    /*gap: 70px;  check  */
     align-content: center;
     justify-content: center;
   }
@@ -420,19 +422,19 @@
     display: flex;
     align-content: center;
     justify-content: center;
-    gap: 160px;
+    /*gap: 160px;  check */
     margin-top: 60px;
   }
   .teles{
     display: flex;
-    gap: 160px;
+    /*gap: 160px;*/
     flex-direction: row-reverse;
     align-content: center;
     justify-content: center;
     margin-top: 60px;
   }
   .group{
-    width: 500px;
+    width: 400px;
     height: 400px;
   }
   .sit{
@@ -466,7 +468,7 @@
   }
   .developer{
     display: flex;
-    gap: 20px;
+    /*gap: 20px;  check  */
     align-content: center;
     justify-content: center;
     
@@ -485,14 +487,15 @@
 
 /*Styling for Portfolio*/
 
-.port{
-  text-align: center;
-}
+
 .portfolio{
   margin-top: 50px;
+
 }
 #ports{
   margin-bottom: 40px;
+  text-align: center;
+  width: 100%;
 }
 /*Desktop view for Portfolio*/
 
@@ -520,7 +523,7 @@
 .shadow{
   border: 2px solid #ddd;
   box-shadow: 0 0 10px rgba(29, 24, 24, 0.4);
-  width: 339px;
+  width: 300px;
   height: 560px;
   justify-self: center;
   border-radius: 7px;
@@ -589,6 +592,9 @@
     align-content: center;
     justify-content: center;
   }
+  #plus{
+    
+  }
 }
 
 
@@ -608,7 +614,7 @@
   border: 1px solid rgba(0, 0, 0, 1);
   border-radius: 5px;
   margin-bottom: 20px;
-  width: 335px;
+  width: 300px;
   height: 38px;
 
 }
@@ -616,7 +622,7 @@
   background-color: rgba(238, 238, 238, 1);
   border: 1px solid rgba(0, 0, 0, 1);
   border-radius: 5px;
-  width: 335px;
+  width: 300px;
   height: 141px;
 
 }
@@ -633,7 +639,7 @@ label{
   font-size: 20px;
 }
 .submit{
-  width: 335px;
+  width: 300px;
   height: 48px;
   border-radius: 5px;
   background-color: rgba(33, 37, 41, 1);
