@@ -32,7 +32,9 @@ This project is built using React, HTML5, CSS and javaScript. it provides a visu
 
 Checkout the Live Demo of this project: [Live Demo] (https://www.loom.com/share/718657ea2ce149e1b6e84c97f30a9d50?sid=133f9244-c531-4aee-9f48-d25f577daecf)
 
-live demo  for service and contact pages (https://www.loom.com/share/e17da8c674e345489aa9a96a2b1ba108?sid=20b682d2-3e67-4ccd-b6fb-6d5deb061fba)
+live demo  for service and contact pages (https://www.loom.com/share/3cc79057e9fa45a79f56a869c42e523b?sid=f940ab65-039a-469d-ab3b-819d0c4e1616)
+
+
 ## Live-demo 
 -Checkout the live Demo of the project: [Live Demo](https://startup-page-3h67.onrender.com)
 

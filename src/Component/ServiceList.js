@@ -2,9 +2,9 @@ import Navbar from "./Navbar";
 import tick from "../assets/tick.svg";
 import { useState } from "react";
 import Footer from "./Footer";
+import { motion } from "framer-motion";
 
 const ServiceList = (props) => {
-
     const [service, setService] = useState([
         {
             subscription: 'Basic',
@@ -34,24 +34,30 @@ const ServiceList = (props) => {
             id: 3
         }
     ]);
+    
     console.log(props, service);
+    
     return (
         <div>
             <div className="title">
                 <Navbar />
             </div>
             <div className="second">
-                <p className="part">
-                    PLANS
-                </p>
+                <p className="part">PLANS</p>
                 <p className="ours">Our Services</p>
                 <p className="dolor">
                     Lorem ipsum, dolor sit amet consectetur <span className="elicits">adipisicing elit.</span>
                 </p>
             </div>
             <div className="key">
-                {service.map((services) => (
-                    <div className="shadow" key={services.id}>
+                {service.map((services, index) => (
+                    <motion.div 
+                        className="shadow" 
+                        key={services.id}
+                        initial={{ opacity: 0, y: 20 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.5, delay: index * 0.2 }}
+                    >
                         <div>
                             <p className="basic">{services.subscription}</p>
                             <div className="cost">
@@ -60,26 +66,12 @@ const ServiceList = (props) => {
                             </div>
                             <p className="amet">{services.lorem}</p>
                             <div className="tick">
-                                <div className="ticks">
-                                    <img src={tick} alt="works" />
-                                    <p className="sits">{services.text}</p>
-                                </div>
-                                <div className="ticks">
-                                    <img src={tick} alt="works" />
-                                    <p className="sits">{services.text}</p>
-                                </div>
-                                <div className="ticks">
-                                    <img src={tick} alt="works" />
-                                    <p className="sits">{services.text}</p>
-                                </div>
-                                <div className="ticks">
-                                    <img src={tick} alt="works" />
-                                    <p className="sits">{services.text}</p>
-                                </div>
-                                <div className="ticks">
-                                    <img src={tick} alt="works" />
-                                    <p className="sits">{services.text}</p>
-                                </div>
+                                {[...Array(5)].map((_, i) => (
+                                    <div className="ticks" key={i}>
+                                        <img src={tick} alt="works" />
+                                        <p className="sits">{services.text}</p>
+                                    </div>
+                                ))}
                             </div>
                             <div className="last">
                                 <button className="learn">
@@ -87,13 +79,13 @@ const ServiceList = (props) => {
                                 </button>
                             </div>
                         </div>
-                    </div>
+                    </motion.div>
                 ))}
             </div>
             <Footer />
-            
         </div>
     );
 }
 
 export default ServiceList;
+
