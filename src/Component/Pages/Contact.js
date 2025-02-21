@@ -5,5 +5,5 @@ const Contact = () => {
         <ContactList />
     );
 }
- 
+
 export default Contact;

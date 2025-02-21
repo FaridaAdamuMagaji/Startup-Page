@@ -23,9 +23,9 @@ This project is a responsive landing page designed for startups to showcase thei
 This project is built using React, HTML5, CSS and javaScript. it provides a visually appealing and responsive layout for a webpage. it includes the following:
 
 -A component folder containing javaScript files for the various sections contained in each page. The files are:
---Navbar file, Header section, Partners section, Network, Team, and Footer section file. 
--A pages folder containing the web pages (Homepage and Portfolio page).
--An App.js file containing the imported Home Page and Portfolio pages.
+--Navbar file, Header section, Partners section, Network, Team, Teamchild ServiceList, ContactList and Footer section file. 
+-A pages folder containing the web pages (Homepage, Portfolio, services and contact page).
+-An App.js file containing the imported Home Page, Portfolio page, services page and contacty page.
 
 # Presentation <a name="Presentation"></a>
 - [Presentation Link]()

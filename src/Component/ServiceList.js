@@ -49,11 +49,10 @@ const ServiceList = (props) => {
                     Lorem ipsum, dolor sit amet consectetur <span className="elicits">adipisicing elit.</span>
                 </p>
             </div>
-            <div>
+            <div className="key">
                 {service.map((services) => (
-                    <div className="key" key={services.id}>
-                        <div id="plus">
-                        <div className="shadow">
+                    <div className="shadow" key={services.id}>
+                        <div>
                             <p className="basic">{services.subscription}</p>
                             <div className="cost">
                                 <p className="mile">{services.cost}</p>
@@ -87,7 +86,6 @@ const ServiceList = (props) => {
                                     <a className="lean" href="#">Learn More</a>
                                 </button>
                             </div>
-                        </div>
                         </div>
                     </div>
                 ))}

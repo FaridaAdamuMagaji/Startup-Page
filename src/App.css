@@ -19,7 +19,6 @@
   display: flex;
   gap: 20px;
   justify-self: start;
-  margin-left: 10px;
 }
 #slide{
   width: 40px;
@@ -108,12 +107,10 @@
   font-family: "Work Sans", serif;
   font-size: 15px;
   font-weight: 400;
-  /*width: 320px;*/
-  max-width: 100%;
+  /*width: 310px;*/
   /*margin-left: 20px;*/
   opacity: 0.75;
   line-height: 20px;
-  overflow-wrap: break-word;
 }
 .text{
   color: black;
@@ -214,7 +211,7 @@
 .group{
   text-align: center;
   margin-top: 33px;
-  width: 100%;
+  width: 290px;
 }
 .net{
   font-weight: 700;
@@ -223,8 +220,7 @@
   text-align: left;
 }
 .nets{
-  padding: 10px;
-  width: 290px;
+  width: 270px;
   font-family: "Work Sans", serif;
   font-weight: 400;
   font-size: 15px;
@@ -238,7 +234,8 @@
   height: 48px;
   border-radius: 5px;
   border: none;
-  margin-left: 75px;
+  justify-self: left;
+  /*margin-left: 75px;*/
 }
 .bi{
   color: #FFFFFF;
@@ -272,7 +269,7 @@
   justify-self: center;
 }
 .border{
-  margin-left: -90px;
+  /*margin-left: -90px;*/
 }
 .names{
   font-weight: 700;
@@ -362,15 +359,16 @@
     display: flex;
     flex-direction: row-reverse;
     /*gap: 620px;*/
-    grid-template: 30px;
+    /*grid-template: 30px;*/
     margin-top: 30px;
+    gap: 250px;
   }
   .star{
     font-size: 40px;
   }
   .bulb{
-    height: 360px;
-    padding-right: 35px;
+    height: 340px;
+    padding-right: 10px;
     margin-top: -30px;
     
   }
@@ -409,6 +407,7 @@
   .flex{
     display: flex;
     /*gap: 70px;  check  */
+    gap: 30px;
     align-content: center;
     justify-content: center;
   }
@@ -423,12 +422,14 @@
     align-content: center;
     justify-content: center;
     /*gap: 160px;  check */
+    gap: 100px;
     margin-top: 60px;
   }
   .teles{
     display: flex;
     /*gap: 160px;*/
     flex-direction: row-reverse;
+    gap: 90px;
     align-content: center;
     justify-content: center;
     margin-top: 60px;
@@ -439,6 +440,12 @@
   }
   .sit{
     margin-top: 125px;
+  }
+  .net{
+    width: 270px;
+  }
+  .nets{
+    width: 460px;
   }
   .talents{
     margin-top: 120px;
@@ -468,11 +475,15 @@
   }
   .developer{
     display: flex;
-    /*gap: 20px;  check  */
+    gap: 20px;
     align-content: center;
     justify-content: center;
     
   } 
+  .team{
+    width: 230px;
+    height: 290px;
+  }
   .icons{
     align-content: start;
     justify-content: start;
@@ -507,7 +518,7 @@
     grid-column-gap: 40px;
   }
   #ports{
-    width: 560px;
+    width: 480px;
     height: 330px;
   }
 
@@ -591,11 +602,11 @@
     display: flex;
     align-content: center;
     justify-content: center;
+    gap: 40px;
   }
-  #plus{
-    
-  }
+  
 }
+
 
 
 /*styles for contact page*/
@@ -607,6 +618,11 @@
   margin-top: 25px;
   padding-top: 40px;
 
+}
+.map-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #form{
@@ -655,5 +671,34 @@ label{
   justify-self: center;
   margin-top: 30px;
   margin-bottom: 50px;
+}
+
+/*Desktop view for contact page*/
+
+@media screen and (min-width: 1024px){
+  .maps{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-self: center;
+    gap: 30px;
+    margin-top: 30px;
+  }
+  iframe{
+    width: 500px;
+    height: 460px;
+    border-radius: 5px;
+    padding-top: 20px;
+  }
+  #form{
+    width: 430px;
+  }
+  #forms{
+    width: 430px;
+  }
+  .submit{
+    width: 430px;
+  }
+  
+  
 }
 
