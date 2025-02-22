@@ -9,6 +9,7 @@ import work7 from "../assets/work7.png";
 import work8 from"../assets/work8.png";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
+import { motion } from "framer-motion"; 
 
 const PortfolioList = (props) => {
     const [works, setWorks] = useState([
@@ -39,15 +40,33 @@ const PortfolioList = (props) => {
             </div>
             <div className="portfolio">
                 {works.map((work) => (
-                    <div key={work.id}>
-                        <img src={work.images} alt="works" id="ports" />
-                    </div>
+                    <motion.div
+                        key={work.id}
+                        initial={{ opacity: 0, x: 50 }}
+                        animate={{ opacity: 1, x: 0 }}
+                        transition={{ duration: 0.6, ease: "easeOut" }}
+                        whileHover={{ scale: 1.05, boxShadow: "0px 4px 15px rgba(0, 0, 0, 0.2)" }}
+                        className="rounded-lg overflow-hidden shadow-lg"
+                    >
+                        <motion.img
+                            src={work.images}
+                            alt="works"
+                            id="ports"
+                            className="w-full h-auto object-cover"
+                            whileHover={{ scale: 1.1 }}
+                            transition={{ duration: 0.3 }}
+                        />
+                    </motion.div> 
                 ))}
             </div>
             <div className="last">
-                <button className="learn">
-                    <a className="lean" href="#">Learn More</a>
-                </button>
+            <motion.button
+                className="learn px-6 py-2 bg-blue-500 text-white rounded-lg shadow-lg"
+                whileHover={{ scale: 1.1, backgroundColor: "#74C69D" }}
+                whileTap={{ scale: 0.95 }}
+            >
+                <a className="lean" href="#">Learn More</a>
+            </motion.button>
             </div>
             <Footer />
         </div>

@@ -38,7 +38,7 @@ const Partners = () => {
             </div>
             <motion.button
                 className="learn px-6 py-2 bg-blue-500 text-white rounded-lg shadow-lg"
-                whileHover={{ scale: 1.1, backgroundColor: "#2563eb" }}
+                whileHover={{ scale: 1.1, backgroundColor: "#74C69D" }}
                 whileTap={{ scale: 0.95 }}
             >
                 <a className="lean" href="#">Learn More</a>
