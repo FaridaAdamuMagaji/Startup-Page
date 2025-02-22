@@ -210,6 +210,7 @@
 }
 .group{
   text-align: center;
+  justify-self: center;
   margin-top: 33px;
   width: 290px;
 }
