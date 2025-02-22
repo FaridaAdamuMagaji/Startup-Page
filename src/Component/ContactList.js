@@ -2,6 +2,7 @@ import Navbar from "./Navbar";
 import Footer from "./Footer";
 import GoogleMapKano from "./Maps";
 import React, { useState } from 'react';
+import { motion } from "framer-motion";
 
 function ContactList() {
     const [formData, setFormData] = useState({
@@ -72,10 +73,21 @@ function ContactList() {
                     onChange={handleChange} 
                     />
                 </div>
-                <div className="lasts">
-                    <button className='submit' type="submit">
-                    <a id="sub" href="#">Submit</a></button>
-                </div>
+                <motion.div
+                    className="lasts"
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.5 }}
+                >
+                <motion.button
+                    className="submit px-6 py-2 bg-turquoise-500 text-white rounded-lg shadow-lg"
+                    whileHover={{ scale: 1.1, backgroundColor: "#74c69d" }}
+                    whileTap={{ scale: 0.95 }}
+                    type="submit"
+                >
+                    <a id="sub" href="#">Submit</a>
+                </motion.button>
+                </motion.div>
             </form>
             </div>
         <Footer />

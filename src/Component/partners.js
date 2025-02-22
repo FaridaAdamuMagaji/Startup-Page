@@ -3,6 +3,7 @@ import microsoft from "../assets/microsoft.svg";
 import facebook from "../assets/facebook.svg";
 import spotify from "../assets/spotify.svg";
 import airbnb from '../assets/airbnb.png';
+import {motion} from "framer-motion";
 
 const Partners = () => {
     return (
@@ -35,11 +36,16 @@ const Partners = () => {
                         <img src={spotify} alt="spotify" id="spot"/>
                     </div>     
             </div>
-            <button className="learn">
+            <motion.button
+                className="learn px-6 py-2 bg-blue-500 text-white rounded-lg shadow-lg"
+                whileHover={{ scale: 1.1, backgroundColor: "#2563eb" }}
+                whileTap={{ scale: 0.95 }}
+            >
                 <a className="lean" href="#">Learn More</a>
-            </button>
+            </motion.button>
+
         </div>
     );
-}
+} 
 
 export default Partners;
