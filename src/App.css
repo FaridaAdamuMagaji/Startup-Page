@@ -1,38 +1,758 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+.title{
+  background-color: #74C69D;
+  overflow-x: hidden;
+ 
+  
+}
+.head{
+  display: flex;
+  justify-content: space-between;
+  
+  /*margin-bottom: -50px;*/
+}
+.start{
+  display: flex;
+  gap: 20px;
+  justify-self: start;
+}
+#slide{
+  width: 40px;
+}
+.menu-button{
+  background-color: #74C69D;
+  color: #FFFFFF;
+  border: none;
+  padding: 15px;
+  font-size: 30px;
+  cursor: pointer;
+}
+.menu-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.menu-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+}
+
+.menu {
+  /*width: 30px;*/ 
+  height: auto;
+}
+.list {
+  display: flex;
+  flex-direction: column; 
+  background-color: #74C69D; 
+  padding: 1rem;
+  position: absolute;
+  top: 50px; 
+  right: 0;
+  border: 1px;
+  z-index: 10; 
+}
+.lists {
+  display: block;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  color: #FFFFFF;
+  font-family: "Work Sans", serif;
+}
+.desktop-only {
+  display: none;
+}
+.star{
+  color: white;
+  font-size: 30px;
+  font-weight: 500;
+  font-family: "Work Sans", serif;
+}
+.bulb{
+  /*height: auto;*/
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.people{
+  align-self: center;
+  justify-self: center;
+  margin-top: 50px;
+}
+.paragraph{
+  text-align: left;
+ /* margin-left: 50px;*/
+}
+.first{
+  color: #FFFFFF;
+  font-family: "Work Sans", serif;
+  font-size: 16px;
+  font-weight: 700;
+  /*margin-left: 20px;*/
+}
+.lorem{
+  font-family: "Crimson Text", serif;
+  color: #FFFFFF;
+  font-size: 28px;
+  font-weight: 700;
+  /*margin-left: 20px;*/
+}
+.ipsum{
+  color: #FFFFFF;
+  font-family: "Work Sans", serif;
+  font-size: 15px;
+  font-weight: 400;
+  /*width: 310px;*/
+  /*margin-left: 20px;*/
+  opacity: 0.75;
+  line-height: 20px;
+}
+.text{
+  color: black;
+  font-family: "Work Sans", serif;
+  font-weight: 400;
+  font-size: 20px;
+  text-decoration: none;
+}
+.one{
+  width: 170px;
+  height: 48px;
+  border: none;
+  border-radius: 6px;
+  background-color: #FFFFFF;
+  /*margin-left: 20px;*/
+  margin-bottom: 40px;
+}
+.partners{
+  text-align: center;
+}
+.second{
+  text-align: center;
+}
+.part{
+  font-family: "Work Sans", serif;
+  font-size: 16px;
+  font-weight: 700;
+  text-align: center;
+  color: #74C69D;
+  letter-spacing: 5px;
+  margin-top: 25px;
+  margin-bottom: -10px;
+}
+.bold{
+  font-family: "Crimson Text", serif;
+  font-weight: 700;
+  font-size: 24px;
+  color: #000000;
+}
+.dolor{
+  font-size: 20px;
+  font-weight: 400;
+  font-family: "Work Sans", serif;
+  text-align: center;
+  width: 280px;
+  text-align: center;
+  justify-self: center;
+  margin-top: -10px;
+}
+.elicits{
+  display: block;
+  margin-top: 10px;
+}
+.elicit{
+  display: block;
+  margin-top: 10px;
+}
+.nemo{
+  display: none;
+}
+.google{
+  margin-top: 40px;
+}
+.micro{
+  margin-top: 30px;
+}
+.logos{
+  display: flex;
+  gap: 20px;
+}
+.bnb{
+  margin-bottom: 40px;
+  margin-top: 40px;
+}
+#face{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+#spot{
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+.learn{
+  width: 170px;
+  height: 48px;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: #212529;
+}
+.lean{
+  text-decoration: none;
+  color: #FFFFFF;
+  font-family: "Work Sans", serif;
+  font-weight: 400;
+  font-size: 20px;
+}
+.group{
+  text-align: center;
+  justify-self: center;
+  margin-top: 33px;
+  width: 290px;
+}
+.net{
+  font-weight: 700;
+  font-family: "Crimson Text", serif;
+  font-size: 24px;
+  text-align: left;
+}
+.nets{
+  width: 270px;
+  font-family: "Work Sans", serif;
+  font-weight: 400;
+  font-size: 15px;
+  color: #21252977;
+  margin-top: -12px;
+  text-align: left;
+}
+.more{
+  background-color: #212529;
+  width: 170px;
+  height: 48px;
+  border-radius: 5px;
+  border: none;
+  justify-self: left;
+  /*margin-left: 75px;*/
+}
+.bi{
+  color: #FFFFFF;
+  font-family: "Work Sans", serif;
+  font-weight: 400;
+  font-size: 20px;
+  text-decoration: none;
+}
+.talents{
+  margin-top: 45px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.our{
+  font-size: 24px;
+  font-weight: 700;
+  font-family: "Crimson Text", serif;
+}
+.designer{
+  text-align: center;
+}
+.team{
+  border: 2px solid #ddd;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(29, 24, 24, 0.4);
+  width: 279px;
+  height: 299px;
+  margin-bottom: 40px;
+  padding-top: 20px;
+  align-self: center;
+  justify-self: center;
+}
+.border{
+  /*margin-left: -90px;*/
+}
+.names{
+  font-weight: 700;
+  font-size: 24px;
+  font-family: "Crimson Text", serif;
+  margin-left: 40px;
+}
+.titles{
+  font-size: 15px;
+  font-weight: 400;
+  font-family: "Work Sans", serif;
+  color: #212529;
+  margin-left: 40px;
+}
+.last{
+  text-align: center;
+  margin-top: -10px;
+  margin-bottom: 30px;
+}
+.learns{
+  width: 170px;
+  height: 48px;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: #212529;
+}
+.mores{
+  text-decoration: none;
+  color: #FFFFFF;
+  font-family: "Work Sans", serif;
+  font-weight: 400;
+  font-size: 20px;
+}
+.view{
+  display: none;
+}
+.footer{
+  background-color: #74C69D;
+  text-align: center;
+}
+.icons{
+  display: flex;
+  gap: 20px;
+  align-content: center;
+  justify-content: center;
+  margin: 10px;
+  padding-top: 35px;
+}
+.copy{
+  font-size: 20px;
+  font-weight: 400;
+  font-family: "Work Sans", serif;
+  color: #FFFFFF;
+  padding-bottom: 35px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+/*Tablet view for homepage*/
+@media screen and (min-width: 768px) {
+  .tele{
+    display: flex;
+    gap: 40px;
+    justify-self: center;
+  }
+  .net{
+    width: 300px;
+  }
+  .teles{
+    display: flex;
+    gap: 40px;
+    justify-self: center;
+  }
+  .developer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-self: center;
+    gap: 40px;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/*Desktop View*/
+@media screen and (min-width: 1024px) {
+  .title{
+    /*padding: 15px 50px 50px 30px;   check  */
+  }
+  .menu-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  .mobile-only {
+    display: none;
+  }
+  .desktop-only {
+    display: flex; 
+  }
+
+  .desktop-only .lists {
+    display: block;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 20px;
+  }
+  .start{
+    margin-top: -20px;
+  }
+  .starts{
+    display: flex;
+    flex-direction: row-reverse;
+    /*gap: 620px;*/
+    /*grid-template: 30px;*/
+    margin-top: 30px;
+    gap: 250px;
+  }
+  .star{
+    font-size: 40px;
+  }
+  .bulb{
+    height: 340px;
+    padding-right: 10px;
+    margin-top: -30px;
+    
+  }
+  .first{
+    font-size: 16px;
+    margin-top: 40px;
+  }
+  .lorem{
+    font-size: 40px;
+    width: 416px;
+    height: 80px;
+    margin-top: 10px;
+  }
+  .ipsum{
+    font-size: 15px;
+    width: 416px;
+    height: 76px;
+    padding-bottom: 20px;
+  }
+  .one{
+    margin-top: -10px;
+  }
+  .paragraph{
+    width: 150px;
+    /*height: 40px;*/
+  }
+  .dolor{
+    display: inline;
+  }
+  .partners{
+    margin-top: 60px;
+  }
+  .elicits{
+    display: block;
+  }
+  .flex{
+    display: flex;
+    /*gap: 70px;  check  */
+    gap: 30px;
+    align-content: center;
+    justify-content: center;
+  }
+  #microsoft{
+    padding-top: 10px;
+  }
+  #face{
+    padding-top: 30px;
+  }
+  .tele{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    /*gap: 160px;  check */
+    gap: 100px;
+    margin-top: 60px;
+  }
+  .teles{
+    display: flex;
+    /*gap: 160px;*/
+    flex-direction: row-reverse;
+    gap: 90px;
+    align-content: center;
+    justify-content: center;
+    margin-top: 60px;
+  }
+  .group{
+    width: 400px;
+    height: 400px;
+  }
+  .sit{
+    margin-top: 125px;
+  }
+  .net{
+    width: 270px;
+  }
+  .nets{
+    width: 460px;
+  }
+  .talents{
+    margin-top: 120px;
+  }
+  .elicit{
+    display: none;
+  }
+  .nemo{
+    display: block;
+    font-size: 20px;
+    font-weight: 400;
+    font-family: "Work Sans", serif;
+  }
+  .design{
+    display: inline;
+  }
+  .view{
+    display: block;
+    text-decoration: none;
+    color: #FFFFFF;
+    font-family: "Work Sans", serif;
+    font-weight: 400;
+    font-size: 20px;
+  
+  }
+  .mores{
+    display: none;
+  }
+  .developer{
+    display: flex;
+    gap: 20px;
+    align-content: center;
+    justify-content: center;
+    
+  } 
+  .team{
+    width: 230px;
+    height: 290px;
+  }
+  .icons{
+    align-content: start;
+    justify-content: start;
+    margin-left: 105px;
+    margin-bottom: -40px;
+  }
+  .copy{
+    text-align: right;
+    margin-right: 105px;
+  }
+}
+
+/*Styling for Portfolio*/
+
+
+.portfolio{
+  margin-top: 50px;
+
+}
+#ports{
+  margin-bottom: 40px;
+  text-align: center;
+  width: 100%;
+}
+/*Desktop view for Portfolio*/
+
+@media screen and (min-width: 1024px) {
+  .portfolio{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-self: center;
+    grid-column-gap: 40px;
+  }
+  #ports{
+    width: 480px;
+    height: 330px;
+  }
+
+}
+
+/*styling for services*/
+.ours{
+  font-family: "Crimson Text", serif;
+  font-size: 24px;
+  font-weight: 700;
+  text-align: center;
+}
+.shadow{
+  border: 2px solid #ddd;
+  box-shadow: 0 0 10px rgba(29, 24, 24, 0.4);
+  width: 300px;
+  height: 560px;
+  justify-self: center;
+  border-radius: 7px;
+  margin-bottom: 35px;
+  margin-top: 45px;
+}
+.basic{
+  text-align: center;
+  font-weight: 400;
+  font-size: 15px;
+  font-family: "Work Sans", serif;
+  padding-top: 30px;
+}
+.cost{
+  text-align: center;
+  display: flex;
+  gap: 9px;
+  justify-self: center;
+  margin-top: -20px;
+}
+.mile{
+  font-family: "Work Sans", serif;
+  font-weight: 700;
+  font-size: 40px;
+  margin-top: 10px;
+}
+.month{
+  font-size: 15px;
+  font-weight: 400;
+  font-family: "Work Sans", serif;
+  color: rgba(33, 37, 41, 0.5);
+  margin-top: 24px;
+}
+.tick{
+  margin-top: 45px;
+  margin-bottom: 45px;
+}
+.ticks{
+  display: flex;
+  gap: 15px;
+  margin-left: 24px;
+  margin-bottom: -10px;
+  
+}
+.amet{
+  font-size: 15px;
+  font-weight: 400;
+  text-align: center;
+  justify-self: center;
+  font-family: "Work Sans", serif;
+  width: 279px;
+  color: rgba(33, 37, 41, 0.5);
+  margin-top: -25px;
+}
+.sits{
+  color: rgba(33, 37, 41, 1);
+  font-size: 15px;
+  font-family: "Work Sans", serif;
+  font-weight: 400;
+}
+
+/* Tablet view for services page*/
+
+@media screen and (min-width: 768px) {
+  .key{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+/*Desktop view for services*/
+@media screen and (min-width: 1024px) {
+  .key{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    gap: 40px;
+  }
+  
+}
+
+
+
+/*styles for contact page*/
+.count{
+  font-family: "Crimson Text", serif;
+  font-size: 24px;
+  font-weight: 700;
+  text-align: center;
+  margin-top: 25px;
+  padding-top: 40px;
+
+}
+.map-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#form{
+  background-color: rgba(238, 238, 238, 1);
+  border: 1px solid rgba(0, 0, 0, 1);
+  border-radius: 5px;
+  margin-bottom: 20px;
+  width: 300px;
+  height: 38px;
+
+}
+#forms{
+  background-color: rgba(238, 238, 238, 1);
+  border: 1px solid rgba(0, 0, 0, 1);
+  border-radius: 5px;
+  width: 300px;
+  height: 141px;
+
+}
+.labels{
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  gap: 20px;
+  justify-self: center;
+  
+}
+label{
+  font-family: "Work Sans", serif;
+  font-weight: 400;
+  font-size: 20px;
+}
+.submit{
+  width: 300px;
+  height: 48px;
+  border-radius: 5px;
+  background-color: rgba(33, 37, 41, 1);
+}
+#sub{
+  color: #FFFFFF;
+  font-family: "Work Sans", serif;
+  font-size: 20px;
+  font-weight: 400;
+  text-decoration: none;
+}
+.lasts{
+  justify-self: center;
+  margin-top: 30px;
+  margin-bottom: 50px;
 }
 
-.App-link {
-  color: #61dafb;
+
+/* Tablet view for contact page*/
+
+@media screen and (min-width: 768px) {
+  .elicits{
+    display: inline-block;
+  }
+  iframe{
+    width: 420px;
+    height: 300px;
+  }
+  #form{
+    width: 400px;
+  }
+  #forms {
+    width: 400px;
+  }
+  
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/*Desktop view for contact page*/
+
+@media screen and (min-width: 1024px){
+  .maps{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-self: center;
+    gap: 30px;
+    margin-top: 30px;
   }
-  to {
-    transform: rotate(360deg);
+  iframe{
+    width: 500px;
+    height: 460px;
+    border-radius: 5px;
+    padding-top: 20px;
   }
+  #form{
+    width: 430px;
+  }
+  #forms{
+    width: 430px;
+  }
+  .submit{
+    width: 430px;
+  }
+  
+  
 }
+
